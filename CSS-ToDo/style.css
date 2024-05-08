@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 70);
+}
+
+#task-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#task-header {
+    margin-bottom: 20px;
+}
+
+#task-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+#add-task-form {
+    display: flex;
+    align-items: center;
+}
+
+#task-title {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px 0 0 4px;
+}
+
+#add-btn {
+    padding: 10px;
+    background-color: #7ED321;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
+}
+
+#add-btn ion-icon {
+    font-size: 18px;
+}
+
+#add-btn:hover {
+    background-color: #64B700;
+}
+
+#task-list-container {
+    margin-top: 20px;
+}
+
+#task-list-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+#task-list li{
+    font-weight: bold;
+}
+
+.task-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #E8F4FF;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.done-btn,
+.remove-btn {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.remove-btn:hover {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.done-btn:hover{
+    color: #fff;
+    background-color: #64B700;
+}
+
+.hide{
+    display: none;
+}
+
+li.done{
+    background: rgb(190, 190, 190);
+    color: #fff;
+    text-decoration: line-through;
+}
